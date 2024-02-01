@@ -128,7 +128,8 @@ main{
 
 .second-section,
 .classes-section,
-.open-gym{
+.open-gym,
+.coaches{
     padding-top: 40px;
     padding-bottom: 40px;
     text-align: center;
@@ -172,7 +173,8 @@ main{
     transition: .5s;
 }
 
-.third-section-body{
+.third-section-body,
+.fifth-section-body{
     background: #0c0b0b;
 }
 
@@ -414,7 +416,84 @@ main{
 
 .open-gym-footer p span{
     color: #5a840b;
+    font-size: 16px;
 }
+
+.coaches p{
+    color: #cac7c6;
+    letter-spacing: 10px;
+    font-size: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.coaches h3{
+    color: #F7F7F7;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+
+.container1 img{
+    width: 100%;
+    height: auto;
+}
+
+.container1 h4{
+    color: #F7F7F7;
+    margin: 16px auto;
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+}
+
+.container1 h4:hover{
+    color: #5a840b;
+}
+
+.container1 p{
+    letter-spacing: unset;
+    font-size: 12px;
+    font-weight: unset;
+    color: #cac7c6;
+    line-height: 2;
+}
+
+.container1 a{
+    text-decoration: none;
+    color: #5a840b;
+    font-size: 12px;
+}
+
+.container1 a:hover{
+    color: #50750a;
+    transition: .5s;
+}
+
+.coaches-socials{
+    color: #F7F7F7;
+    margin: 18px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.coaches-socials i{
+    background: #4a4a4a;
+    padding: 8px;
+    font-size: 10px;
+    border-radius: 3px;
+    outline: solid 2px #4a4a4a;
+    margin-bottom: 32px;
+}
+
+.coaches-socials i:hover{
+    background: #0c0b0b;
+    outline-color: #4a4a4a;
+    transition: .5s;
+}
+
 @media (min-width: 1200px) {
     main{
         max-width: 1200px;
