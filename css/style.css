@@ -122,7 +122,8 @@ nav{
 
 .second-section-body,
 .fourth-section-body,
-.footer-section{
+.footer-section,
+.about-hero-body{
     background: #202122;
 }
 
@@ -624,6 +625,161 @@ input:hover{
     transition: .5s;
 }
 
+/* About Page */
+
+.about-section{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/about\ bg\ main.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-section-info .event{
+    color: #70a903;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    letter-spacing: 10px;
+    font-size: 18px;
+}
+
+.about-section-info h1{
+    color: #F7F7F7;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.about-section-info .subhead{
+    color: #cac7c6;
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 32px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.counter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F7F7F7;
+    gap: 5px;
+    margin-bottom: 32px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 8px;
+}
+
+.counter p{
+    font-size: 20px;
+    background: #0c0b0b;
+    padding: 5px 8px;
+    margin-bottom: 16px;
+    border-radius: 5px;
+}
+
+.about-cta-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-cta-btn a{
+    text-decoration: none;
+    color: #F7F7F7;
+    background: #70a903;
+    padding: 12px 32px;
+    border-radius: 3px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    border: 2px solid transparent;
+}
+
+.about-cta-btn a:hover{
+    background: transparent;
+    border-color: #70a903;
+    color: #70a903;
+    transition: .5s;
+}
+
+.about-hero{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    text-align: center;
+}
+
+.about-head{
+    color: #cac7c6;
+    letter-spacing: 10px;
+    font-size: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.about-hero h3{
+    color: #F7F7F7;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.about-hero h3 span{
+    color: #70a903;
+}
+
+.about-subhead{
+    color: #cac7c6;
+    font-size: 12px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: unset;
+    font-weight: unset;
+}
+
+.sections{
+    margin: 16px auto;
+}
+
+.first{
+    margin-bottom: 16px;
+}
+
+.sections img{
+    width: 70px;
+}
+
+.sections h4{
+    color: #F7F7F7;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+
+.sections .dets{
+    text-decoration: none;
+    color: #F7F7F7;
+    font-size: 8px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    background: #70a903;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.sections .dets:hover{
+    background: transparent;
+    transition: .5s;
+}
+
 @media(min-width: 920px) {
     .menu{
         display: none;
@@ -686,15 +842,18 @@ input:hover{
         background: unset;
     }
 
-    .hero-section{
+    .hero-section,
+    .about-section{
         height: 90vh;
     }
 
-    .hero-section-info h1{
+    .hero-section-info h1,
+    .about-section-info h1{
         font-size: 90px;
     }
 
-    .hero-section-info .subhead{
+    .hero-section-info .subhead,
+    .about-section-info .subhead{
         font-size: 22px;
         font-family: 'Raleway', sans-serif;
         font-weight: 500;
@@ -704,15 +863,18 @@ input:hover{
         font-size: 40px;
     }
 
-    .second-subhead{
+    .second-subhead,
+    .about-subhead{
         font-size: 20px;
     }
 
-    .classes-section p{
+    .classes-section p,
+    .about-head{
         font-size: 16px;
     }
 
-    .classes-section h3{
+    .classes-section h3,
+    .about-hero h3{
         font-size: 40px;
     }
 
@@ -780,6 +942,50 @@ input:hover{
 
     .right p{
         font-weight: 700;
+    }
+
+    /* About Page */
+
+    .about-section-info .event{
+        font-size: 28px;
+    }
+
+    .counter{
+        font-size: 16px;
+        gap: 32px;
+    }
+    
+    .counter p{
+        font-size: 32px;
+    }
+
+    .sections{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 32px auto;
+    }
+
+    .sections img{
+        width: 120px;
+    }
+
+    .sections h4{
+        font-size: 14px;
+    }
+
+    .first{
+        border-right: 1px solid #4a4a4a;
+        padding-right: 95px;
+        padding-bottom: 95px;
+    }
+
+    .last{
+        border: none;
+    }
+
+    .sections .dets{
+        font-size: 12px;
     }
 }
 
