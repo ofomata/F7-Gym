@@ -181,7 +181,8 @@ main{
 }
 
 .third-section-body,
-.fifth-section-body{
+.fifth-section-body,
+.service-section-body{
     background: #0c0b0b;
 }
 
@@ -780,6 +781,136 @@ input:hover{
     transition: .5s;
 }
 
+/* Services Page */
+
+.service-section{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.service-section h1{
+    color: #F7F7F7;
+    font-size: 20px;
+    margin-bottom: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+.service-section .message{
+    color: #cac7c6;
+    font-size: 12px;
+    line-height: 2;
+    font-family: 'Raleway', sans-serif;
+}
+
+.message a{
+    text-decoration: none;
+    color: #70a903;
+}
+
+.packages{
+    text-align: center;
+    margin: 32px auto;
+}
+
+.packages p{
+    color: #cac7c6;
+    letter-spacing: 10px;
+    font-size: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.packages h3{
+    color: #F7F7F7;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.packages-info{
+    text-align: center;
+    margin-top: 32px;
+    background: #202122;
+    padding: 40px;
+}
+
+.price{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 5px;
+}
+
+.price .sign{
+    color: #cac7c6;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+}
+
+.price h1{
+    font-size: 32px;
+    font-family: "Playfair Display", serif;
+    color: #F7F7F7;
+}
+
+.packages-info h5{
+    color: #cac7c6;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    margin-bottom: 32px;
+    position: relative;
+}
+
+.packages-info h5::after{
+    position: absolute;
+    content: "";
+    width: 15%;
+    height: -6px;
+    bottom: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid #70a903;
+}
+
+.packages-info p{
+    color: #cac7c6;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    margin-bottom: 32px;
+    line-height: 2;
+}
+
+.packages-info a{
+    text-decoration: none;
+    color: #F7F7F7;
+    font-size: 8px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    background: #70a903;
+    padding: 8px 10px;
+    border-radius: 5px;
+}
+
+.packages-info a:hover{
+    background: transparent;
+    transition: .5s;
+}
+
+.join p{
+    text-align: center;
+    color: #cac7c6;
+    font-size: 12px;
+    margin: 32px auto;
+    font-family: 'Raleway', sans-serif;
+}
+
+.join a{
+    text-decoration: none;
+    color: #70a903;
+}
+
 @media(min-width: 920px) {
     .menu{
         display: none;
@@ -869,12 +1000,14 @@ input:hover{
     }
 
     .classes-section p,
-    .about-head{
+    .about-head,
+    .packages p{
         font-size: 16px;
     }
 
     .classes-section h3,
-    .about-hero h3{
+    .about-hero h3,
+    .packages h3{
         font-size: 40px;
     }
 
@@ -986,6 +1119,56 @@ input:hover{
 
     .sections .dets{
         font-size: 12px;
+    }
+
+    /* Services Page */
+
+    .service-section h1{
+        margin-top: 50px;
+        font-size: 40px;
+    }
+
+    .service-section .message{
+        font-size: 16px;
+    }
+
+    .packages{
+        margin-top: 60px;
+    }
+
+    .all-packages{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 32px;
+    }
+
+    .price .sign{
+        font-size: 16px;
+    }
+
+    .price h1{
+        font-size: 42px;
+    }
+
+    .packages-info h5{
+        font-size: 18px;
+    }
+
+    .packages-info p{
+        font-size: 16px;
+    }
+
+    .packages-info a{
+        font-size: 12px;
+    }
+
+    .join p{
+        font-size: 16px;
+    }
+
+    .packages-info{
+        padding-top: 80px;
+        padding-bottom: 80px;
     }
 }
 
