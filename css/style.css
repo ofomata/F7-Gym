@@ -182,7 +182,8 @@ main{
 
 .third-section-body,
 .fifth-section-body,
-.service-section-body{
+.service-section-body,
+.location-section-body{
     background: #0c0b0b;
 }
 
@@ -911,6 +912,73 @@ input:hover{
     color: #70a903;
 }
 
+/*Location Page*/
+
+.location-section{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.location-section h3{
+    color: #F7F7F7;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.location{
+    background: #202122;
+    margin-top: 32px;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.location h5{
+    color: #cac7c6;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.location p{
+    margin: 16px auto;
+    color: #cac7c6;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+}
+
+.location p span{
+    font-weight: normal;
+    margin-left: 10px;
+    font-size: 11px;
+}
+
+.location-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.location-btn a{
+    text-decoration: none;
+    color: #F7F7F7;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    font-size: 10px;
+    background: #70a903;
+    padding: 6px 16px;
+    border-radius: 5px;
+}
+
+.location-btn a:hover{
+    background: transparent;
+    transition: .5s;
+}
+
 @media(min-width: 920px) {
     .menu{
         display: none;
@@ -1169,6 +1237,43 @@ input:hover{
     .packages-info{
         padding-top: 80px;
         padding-bottom: 80px;
+    }
+
+    /*Beginner Page*/
+
+    .beginner-section{
+        padding-top: 80px;
+    }
+
+    /*Location Page*/
+    .location-section{
+        padding-top: 80px;
+    }
+
+    .location-wrapper{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 32px;
+    }
+
+    .location-section h3{
+        font-size: 40px;
+    }
+    
+    .location h5{
+        font-size: 18px;
+    }
+
+    .location p{
+        font-size: 16px;
+    }
+
+    .location p span{
+        font-size: 14px;
+    }
+
+    .location-btn a{
+        font-size: 12px;
     }
 }
 
