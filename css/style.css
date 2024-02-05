@@ -183,7 +183,8 @@ main{
 .third-section-body,
 .fifth-section-body,
 .service-section-body,
-.location-section-body{
+.location-section-body,
+.contact-section-body{
     background: #0c0b0b;
 }
 
@@ -979,6 +980,75 @@ input:hover{
     transition: .5s;
 }
 
+/*Contact Section*/
+
+.contact-section{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.contact-section h3{
+    color: #F7F7F7;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+
+.contact-custom-form{
+    margin-bottom: 60px;
+}
+
+.contact-custom-form input{
+    display: block;
+    margin-bottom: 16px;
+    width: 100%;
+    padding: 16px 12px;
+    outline: none;
+    border: none;
+    background: #202122;
+    color: #70a903;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.contact-custom-form input::placeholder,
+.contact-custom-form textarea::placeholder{
+    color: #70a903;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.contact-custom-form textarea{
+    display: block;
+    margin-bottom: 16px;
+    width: 100%;
+    padding: 16px 12px;
+    outline: none;
+    border: none;
+    background: #202122;
+    color: #70a903;
+    font-weight: bold;
+    font-style: italic;
+    resize: none;
+}
+
+.contact-btn{
+    background: #70a903;
+    padding: 8px 25px;
+    outline: none;
+    border: none;
+    color: #F7F7F7;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    font-size: 10px;
+    border-radius: 5px;
+}
+
+.contact-btn:hover{
+    background: transparent;
+    transition: .5s;
+}
+
 @media(min-width: 920px) {
     .menu{
         display: none;
@@ -1246,7 +1316,8 @@ input:hover{
     }
 
     /*Location Page*/
-    .location-section{
+    .location-section,
+    .contact-section{
         padding-top: 80px;
     }
 
@@ -1256,7 +1327,8 @@ input:hover{
         gap: 32px;
     }
 
-    .location-section h3{
+    .location-section h3,
+    .contact-section h3{
         font-size: 40px;
     }
     
@@ -1274,6 +1346,14 @@ input:hover{
 
     .location-btn a{
         font-size: 12px;
+    }
+
+    /* About Page */
+
+    .custom-contact{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 32px;
     }
 }
 
