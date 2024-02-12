@@ -14,6 +14,7 @@ const buttonTwo = document.querySelector(".btn2");
 const contentOne = document.querySelector(".content1");
 const contentTwo = document.querySelector(".content2");
 
+if (window.location.pathname === "/index.html") {
 buttonOne.addEventListener("click", () => {
     if (contentOne.style.display !== "block") {
         contentOne.style.display = "block";
@@ -33,9 +34,11 @@ buttonTwo.addEventListener("click", () => {
     buttonTwo.classList.add("clicked");
     buttonOne.classList.remove("clicked");
 });
+}
 
 //CountDown
 
+if (window.location.pathname === "/about.html") {
 const countDown = new Date("Feb 02, 2024 00:00:00").getTime();
 const x = setInterval(function(){
     const now = new Date().getTime();
@@ -61,4 +64,4 @@ const x = setInterval(function(){
     } */
 
 },1000);
-
+}
